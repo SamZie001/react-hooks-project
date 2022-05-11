@@ -1,22 +1,19 @@
 import React from 'react'
+import './MovieList.css'
 
 function MovieList({list}) {
-
   return (
-    <div>
-      {
-        list.map((movie)=>(
-            <div key={movie.id} className='mapped'>
-              
-              <img className='image' src={movie.posterURL} alt='img' />
-              <h5 className='mov'><span>{movie.id}</span>.{movie.title}</h5>
-              
-              <h5 className='dd' > <span>Description</span>: {movie.description}</h5>
-              <h5 className='dd'> <span>Rating</span>: {movie.rating}</h5>
-
+    <div className='MovList'>
+      <h4>My Movies</h4>
+      <div className="titles">
+        {
+          list.map((e, index)=> (
+            <div key={e.id}>
+              <p><span>{index+1}.</span> {e.title}</p>
             </div>
-        ))
-      }
+          ))
+        }
+      </div>
     </div>
   )
 }

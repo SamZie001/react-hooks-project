@@ -1,54 +1,27 @@
-body{
-    background-color: #efefef;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-}
-
-.mov{
-    cursor: pointer;
-    font-size: 25px;
-}
-.yot{
-    text-decoration: none;
-    color: rgb(57, 210, 197);
-}
-.yot:hover{
-    color: crimson;
-}
-.image{
-    width: 150px;
-    height: 200px;
-}
-.mapped{
-    border: none;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    width: 400px; 
-    color: white;  
-    background-color: rgb(8, 7, 79);
-    box-shadow: 2px 2px 2px 2px gray;
-}
-
-form{
-    margin-top: 70px;
-    color: red;
-    font-weight: bold;
-}
-.head{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: double underline;
-}
-.dd{
-    font-size: 15px;
-}
-span{
-    color: red;
-}
-
-.trailer-page{
-    border: 1px solid yellow;
-    height: 500px;
-    background-color: gray;
+.App .head{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 15px;
+    color: white;
+    background: black;
+    font-weight: bolder;
+}   
+
+.add-movie-form input{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    min-width: 200px;
+}
+
+button{
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bolder;
+    border: none;
+}
+button:hover{    
+    background-color: royalblue;
+    color: white;
+    transition: 0.3s;
 }
